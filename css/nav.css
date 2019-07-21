@@ -1,0 +1,29 @@
+nav{
+    margin-top: -39.2px;
+}
+
+nav ul{
+    margin: auto;
+    color: goldenrod;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav ul li:hover{
+    background-color: rgba(218, 165, 32, 0.1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+nav ul li a{
+    text-decoration: none;
+}

@@ -1,0 +1,64 @@
+#conteudo{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#conteudo h1 {
+    text-indent: 50px;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+#conteudo p{
+    text-indent: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+form {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    background-color:black;
+    border-radius: 5px;
+    
+}
+
+form fieldset{
+    width: 100%;
+    border: none;
+}
+
+form fieldset label {
+    float: left;
+    color: goldenrod;
+    padding: 10px 10px;
+}
+
+form input {
+    width: 80%;
+    padding: 10px;
+    margin: 0 0 5px 5px; 
+    color: black;
+}
+
+form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 0 0 5px 5px; 
+    color: black;
+}
+
+.btn_enviar{
+    width: initial;
+    text-align: center;
+    margin: 1vh 0 1vh 0;
+}
+
+.btn_enviar button {
+    color: black;
+    height: 30px;
+    width: 70px;
+}

@@ -1,0 +1,21 @@
+#conteudo{
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+#conteudo h1 {
+    text-indent: 50px;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+#conteudo p{
+    text-indent: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
