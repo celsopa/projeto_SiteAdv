@@ -3,55 +3,231 @@
 
     <head>
         <meta charset='utf-8'>
-        <title>Araújo Advocacia</title> <!-- Titulo da pagina -->
+        <title>Celso Araújo Advocacia| OAB/AL 11.028</title> <!-- Titulo da pagina -->
         <meta name='author' content='Celso Pereira de Araujo'> <!-- Autor da pagina -->
 
         <meta name='description' content=''> <!-- Descricao do conteudo da pagina -->
-        <meta name='keywords' content='aaaa, bbbb, ccc, xxxx'> <!-- keywords para sites de busca -->
+        <meta name='keywords' content='advocacia, advogado, celso, pereira, araújo, maceió, alagoas, direito'>
+        <!-- keywords para sites de busca -->
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <meta name='theme-color' content='#fafafa'>
+        <meta name='theme-color' content='#000a2a'>
 
-        <link rel='manifest' href='#'>
+        <link rel='manifest' href=''>
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-        
-        <link rel='stylesheet' href='./css/main.css'>
-        <link rel='stylesheet' href='./css/cabecalho.css'>
-        <link rel='stylesheet' href='./css/nav.css'>
-        <link rel='stylesheet' href='./css/conteudo.css'>
-        <link rel='stylesheet' href='./css/contato_form.css'>
-        <link rel='stylesheet' href='./css/rodape.css'>
 
+        <link rel='stylesheet' href='./css/main.css'>
+        <link rel='stylesheet' href='./css/nav.css'>
+        <!-- <link rel='stylesheet' href='./css/cabecalho.css'> -->
+        <!-- <link rel='stylesheet' href='./css/caixa_atuacao.css'>
+        <link rel='stylesheet' href='./css/caixa_home.css'>
+        <link rel='stylesheet' href='./css/caixa_contato.css'> -->
+        <link rel='stylesheet' href='./css/rodape.css'>
+        <script src="https://kit.fontawesome.com/d04e551192.js"></script>
     </head>
 
-    <body onload="home()">
-        <header>
-            <div class="cabecalho">
-                <h1>Celso Pereira de Araújo</h1>
-                <h2>advocacia ao alcance de todos</h2>
-            </div>
-        </header>
-
+    <body onload="slide1()">
+        <div id="fundo"></div>
         <nav>
             <ul>
-                <li onclick="home()" id="home">HOME</li>
-                <li onclick="equipe()" id="equipe">EQUIPE</li>
-                <li onclick="atuacao()" id="atuacao">ATUAÇÃO</li>
-                <li onclick="contato()" id="contato">CONTATO</li>
+                <a href="#conteudo">
+                    <li id="home" onclick="home()">HOME</li>
+                </a>
+                <a href="#conteudo">
+                    <li id="atuacao" onclick="atuacao(), slide1();">ATUAÇÃO</li>
+                </a>
+                <a href="#conteudo">
+                    <li id="contato" onclick="contato()">CONTATO</li>
+                </a>
             </ul>
         </nav>
 
-        <section id="conteudo">
-          
+        <section id="corpo">
+            <div class="corpo">
+                <h1>Celso Pereira de Araújo</h1>
+                <h2>advocacia ao alcance de todos</h2>
+            </div>
         </section>
 
+
+        <!--================CAIXA HOME =================-->
+        <section id="caixa_home">
+            <div id="esconder"><i onclick="esconder()" class="fas fa-times fa-lg"></i></div>
+            <div class="sobre_mim black">
+                <div class="metade">
+                    <img src="./image/me.png" alt="">
+                </div>
+                <div class="metade">
+                    <h1>CELSO PEREIRA DE ARAÚJO</h1>
+                    <h2>oab/al 11.028</h2><br>
+                    <p>Bacharel em Direito pela Sociedade de Ensino Universitário do Nordes - SEUNE.</p>
+                    <p>Cursou Especialização em Direito Tributário pelo Instituto Brasileiro de Estudos Tributários -
+                        IBET.</p>
+                    <p>Advogado com mais de 07 (sete) anos de atuação em Direito de Família, Trabalhista, Previdenciário
+                        e Tributário. </p>
+                    <p></p>
+
+                </div>
+            </div>
+        </section>
+        <!--================FIM CAIXA HOME =================-->
+
+
+        <!--================CAIXA ATUACAO =================-->
+        <section id="caixa_atuacao" class="esconde">
+            <div id="esconder"><i onclick="esconder()" class="fas fa-times fa-lg"></i></div>
+            <div class="caixa_atuacao">
+                <h1>Áreas de Atuação</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iure quod quasi, facilis vero
+                    mollitia quos qui iste totam minus cum nam ex veniam illum, delectus provident ducimus quidem natus.
+                </p>
+            </div>
+            <div class="areas">
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked>
+                        <label for="slide1"></label>
+                        <div class="area_atuacao black">
+                            <div class="">
+                                <i class="fas fa-users fa-3x icone"></i>
+                                <h1>Direito Civil</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat
+                                    obcaecati inventore corrupti, dolor facilis voluptate eaque consectetur at quasi
+                                    nostrum voluptatem laudantium pariatur. Expedita harum iure eum laudantium nisi!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide">
+                        <label for="slide2"></label>
+                        <div class="area_atuacao black">
+                            <div class="">
+                                <i class="fas fa-shopping-cart fa-3x icone"></i>
+                                <h1>Direito do Consumidor</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat
+                                    obcaecati inventore corrupti, dolor facilis voluptate eaque consectetur at quasi
+                                    nostrum voluptatem laudantium pariatur. Expedita harum iure eum laudantium nisi!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide">
+                        <label for="slide3"></label>
+                        <div class="area_atuacao black">
+                            <div class="">
+                                <i class="fas fa-hand-holding-usd fa-3x icone"></i>
+                                <h1>Direito Previdenciário</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat
+                                    obcaecati inventore corrupti, dolor facilis voluptate eaque consectetur at quasi
+                                    nostrum voluptatem laudantium pariatur. Expedita harum iure eum laudantium nisi!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide4" name="slide">
+                        <label for="slide4"></label>
+                        <div class="area_atuacao black">
+                            <div class="">
+                                    <i class="fas fa-file-invoice-dollar fa-3x icone"></i>
+                                <h1>Direito Tributário</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus placeat
+                                    obcaecati inventore corrupti, dolor facilis voluptate eaque consectetur at quasi
+                                    nostrum voluptatem laudantium pariatur. Expedita harum iure eum laudantium nisi!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <!--================FIM CAIXA ATUACAO =================-->
+
+
+        <!--================CAIXA DE CONTATO =================-->
+        <section id="caixa_contato" class="esconde">
+            <div id="esconder"><i onclick="esconder()" class="fas fa-times fa-lg"></i></div>
+            <div class="caixa_contato">
+                <h1>Entre em contato</h1>
+                <p>Envie sua mensagem utilizando o formulário abaixo.</p>
+                <form action="mailto:araujo.adv@live.com" method="post" autocomplete="off" id="contactForm">
+                    <div class="metade">
+                        <fieldset>
+                            <label for="id_nome">Nome (*)</label>
+                            <input type="text" name="nome" id="id_nome" placeholder="Nome Completo" required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="id_telefone">Telefone (*)</label>
+                            <input type="text" name="telefone" id="id_telefone" placeholder="(DDD) 9 9999-9999"
+                                required>
+                        </fieldset>
+                        <fieldset>
+                            <label for="id_email">e-Mail</label>
+                            <input type="text" name="email" id="id_email" placeholder="seuemail@mail.com.br">
+                        </fieldset>
+                    </div>
+                    <div class="metade">
+                        <fieldset>
+                            <label for="id_mensagem">Mensagem (*)</label>
+                            <textarea name="mensagem" id="id_mensagem" cols="30" rows="10"
+                                placeholder="Sua mensagem aqui" required></textarea>
+                        </fieldset>
+                        <button class="btn_enviar">
+                            <div type="submit" id="id_enviar">ENVIAR</div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade esconde" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div type="div" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <h2>Obrigado.</h2>
+                        <p>Mensagem enviada com sucesso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade esconde" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div type="div" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </div>
+                        <h2>Desculpe!</h2>
+                        <p>Alguma coisa deu errada...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+        <!--================FIM CAIXA DE CONTATO =================-->
+
+
         <footer>
-            <p>Araújo Advocacia e Consultoria Jurídica &copy;</p>
+            <p>&copy; Araújo Advocacia e Consultoria Jurídica </p>
         </footer>
 
-        <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src='./js/main.js'></script> <!-- Add your javascript here -->
+        <script src="./js/contact.js"></script>
     </body>
 
 </html>
