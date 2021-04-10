@@ -16,7 +16,7 @@ body{
 
 img{
     width: 100%;
-    max-width: 30rem;
+    max-width: 20rem;
 }
 
 h1,h2,p {
@@ -24,9 +24,9 @@ h1,h2,p {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
